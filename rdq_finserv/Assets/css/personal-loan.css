@@ -1,0 +1,19 @@
+﻿body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0c2f54;
+}
+.ploan1 {
+    font-size: 16px;
+    color: #000
+}
+.rupeesymbol {
+    font-family: Arial
+}
+.docreq {
+    font-size: 16px;
+    color: #3f3f3f;
+    font-weight: 300
+}

@@ -1,0 +1,404 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-------------------------Google Search Console Code Start--------------------------->
+    <meta name="google-site-verification" content="RnS8d6bdMpNNBwTCDrSUsM3jNOfIwc6PTIK4OjibuZo" />
+    <!-------------------------Google Search Console Code Finish------------------------>
+    <title>@ViewBag.Title | RDQ Finserv</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="~/Assets/images/layout/RDQ Finserv_title.png" />
+    <!--Font Awosme CDN used for Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Common Css extenal File-->
+    <link href="~/Assets/css/common/animated.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/layout.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/owl.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/StyleSheet1.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/theme.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/vivify.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <img src="~/Assets/images/layout/rdq-loader.png" />
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    <!-- Layout header -->
+    <header class="site-header">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg padding-nav static-nav">
+            <div class="container">
+                <a href="@Url.Action("Index","Home")" class="rdqlogo"><img src="~/Assets/images/layout/rdq-finserv-logo.png" alt="rdq-finserv-logo" class="rdqlogodim" /></a>
+                <div class="collapse navbar-collapse" style="margin-left:675px">
+                    <ul class="navbar-nav ml-auto mr-auto">
+
+                        <li class="nav-item dropdown static"><a class="nav-link" href="@Url.Action("Aboutus","Home")"> About Us </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="@Url.Action("products","Home")">Products</a>  </li>
+                        <li class="nav-item"> <a class="nav-link" href="@Url.Action("Support","Home")">Support</a> </li>
+                        <li class="nav-item "> <a class="nav-link" href="@Url.Action("SignUp","Home")"> Sign Up </a> </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--side menu open button-->
+            <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle" style="margin-right:0;">
+                <span class="gradient-bg1"></span> <span class="gradient-bg1"></span> <span class="gradient-bg1"></span>
+            </a>
+        </nav>
+        <!-- Navbar End -->
+        <!-- side menu -->
+        <div class="side-menu gradient-bg overflow-auto sidenav">
+            <div class="overlay"></div>
+            <div style="padding: 20px 1.3rem; background-color:#fff">
+                <span class="btn-close" style="box-shadow:none" id="btn_sideNavClose"><i style="color:#fff"></i><i style="color:#fff"></i></span>
+                <nav class="side-nav mt-5 w-100">
+                    <div class="row mt-3 show-on-mobile" style="margin-right:0">
+                        <!-- single Menu Item -->
+                        <div class="col-sm-6 mb-3 text-primary" style="width:50%;">
+                            <div class="featured-box style-1  mycard l1">
+                                <a href="@Url.Action("Aboutus","Home")">
+                                    <div class="featured-box-icon text-primary">
+                                        <i class="fa fa-dashboard l2"></i>
+                                    </div>
+                                    <span class="l3"> ABOUT US</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- single Menu Item -->
+                        <div class="col-sm-6 mb-3 text-primary" style="width:50%;">
+                            <div class="featured-box style-1 mycard l1">
+                                <a href="@Url.Action("products","Home")">
+                                    <div class="featured-box-icon text-primary">
+                                        <i class="fa fa-paper-plane l2"></i>
+                                    </div>
+                                    <span class="l3"> PRODUCTS</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- single Menu Item -->
+
+                        <div class="col-sm-6 text-primary" style="width:50%;">
+                            <div class="featured-box style-1 mycard l1">
+                                <a href="@Url.Action("Support","Home")">
+                                    <div class="featured-box-icon text-primary">
+                                        <i class="fa fa-mail-reply-all l2"></i>
+                                    </div>
+                                    <span class="l3"> SUPPORT</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- single Menu Item -->
+                        <div class="col-sm-6 text-primary" style="width:50%;">
+                            <div class="featured-box style-1 mycard l1">
+                                <a href="@Url.Action("SignUp","Home")">
+                                    <div class="featured-box-icon text-primary">
+                                        <i class="fa fa-sign-in l2"></i>
+                                    </div>
+                                    <span class="l3"> SIGNUP</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <!-- Social Menu With Icon Start-->
+                <div class="side-footer w-100 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 l4">
+                            <a href="">
+                                <i class="fa fa-gift l6" aria-hidden="true"></i><br />
+                                <span class="l7"> CURRENT OFFERS</span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 l5">
+                            <a href="@Url.Action("las","Home")">
+                                <i class="fa fa-play l6" aria-hidden="true"></i><br />
+                                <span class="l7">DOWNLOAD APP</span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 l4">
+                            <a href="">
+                                <i class="fa fa-user l6" aria-hidden="true"></i><br />
+                                <span class="l7"> MY ACCOUNT</span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 l5">
+                            <a href="">
+                                <i class="fa fa-tachometer l6" aria-hidden="true"></i><br />
+                                <span class="l7"> CHECK CIBIL SCORE </span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 l4">
+                            <a href="">
+                                <i class="fa fa-users l6" aria-hidden="true"></i><br />
+                                <span class="l7"> Partners programe </span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 l5">
+                            <a href="">
+                                <i class="fa fa-calculator l6" aria-hidden="true"></i><br />
+                                <span class="l7"> Calculator </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Social Menu With Icon End-->
+
+                <hr class="l8" />
+                <!-- Social Media Start-->
+                <div class="side-footer w-100 mt-5 mb-5">
+                    <ul class="social-icons wow fadeInUp" data-wow-delay="300ms">
+                        <li><a href="https://www.facebook.com/RDQ-Finserv-110096081435207/" class="facebook" target="_blank"><i class="fa fa-facebook-f"></i> </a> </li>
+                        <li><a href="https://twitter.com/rdqfinserv" class="twitter" target="_blank"><i class="fa fa-twitter"></i> </a> </li>
+                        <li><a href="https://www.linkedin.com/company/rdqfinserv/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i> </a> </li>
+                        <li><a href="https://www.instagram.com/rdqfinserv/" class="insta" target="_blank"><i class="fa fa-instagram"></i> </a> </li>
+                    </ul>
+                </div>
+                <!-- Social Media End -->
+            </div>
+        </div>
+        <div id="close_side_menu" class="tooltip"></div>
+        <!-- End side menu -->
+    </header>
+    <!-- header End-->
+
+
+
+
+    @RenderBody()
+
+
+
+
+
+
+   
+    <!--Site Footer Here-->
+    <footer id="site-footer" class="showdesktop bgdark padding_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 l12">
+                    <div class="footer_panel padding_bottom_half bottom20">
+                        <a href="/Home/Index" class="footer_logo">
+                            <img src="~/Assets/images/layout/rdq-finserv-white-logo.png" alt="rdq-finserv-white-logo" style="width: 250px;" />
+                        </a>
+                        <div class="d-table w-100 address-item whitecolor l13">
+                            <span class="d-table-cell align-middle" style="color: #ffffff;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                </svg>
+                            </span>
+                            <p class="d-table-cell align-middle bottom0" style="text-align:left">
+                                <a class="d-block" href="tel:">  033 6826 0900 </a>
+                                <a class="d-block" href="mailto:">support@rdqfinserv.com</a>
+                            </p>
+                        </div>
+                        <ul class="social-icons wow fadeInUp" data-wow-delay="300ms">
+                            <li><a href="https://www.facebook.com/RDQ-Finserv-110096081435207/" class="facebook l14" target="_blank"><i class="fa fa-facebook-f"></i> </a> </li>
+                            <li><a href="https://twitter.com/rdqfinserv" class="twitter l14 " target="_blank"><i class="fa fa-twitter"></i> </a> </li>
+                            <li><a href="https://www.linkedin.com/company/rdqfinserv/" class="linkedin l14" target="_blank"><i class="fa fa-linkedin"></i> </a> </li>
+                            <li><a href="https://www.instagram.com/rdqfinserv/" class="insta l14" target="_blank"><i class="fa fa-instagram"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6 l15">
+                    <div class="footer_panel padding_bottom_half bottom20 pl-0 pl-lg-5">
+                        <h3 class="whitecolor l16">Company</h3>
+                        <ul class="links">
+                            <li> <a href="@Url.Action("Aboutus","Home")" class="l17">About Us</a></li>
+                            <li><a href="https://www.iimjobs.com/r/152295-RDQ-GROUP" target="_blank" class="l17">Careers</a></li>
+                            <li><a href="#" class="l17">  Media</a></li>
+                            <li><a href="#" class="l17">  Blogs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 l19">
+                    <div class="footer_panel padding_bottom_half bottom20">
+                        <h3 class="whitecolor l18">
+                            Products & More
+                        </h3>
+                        <ul class="links text-white">
+                            <li><a href="/Home/personalloan" class="l20">  Personal Loan </a></li>
+                            <li><a href="/Home/las" class="l20">  LAS </a> </li>
+                            <li><a href="/Home/creditcard" class="l20">  Credit Card </a></li>
+                            <li><a href="/Home/emiprotection" class="l20">  EMI Protection </a></li>
+                            <li> <a href="/Home/consumerdurable" class="l20" "> Consumer Durables </a></li>
+                            <li><a href="/Home/#loan_calculator" class="l20">  EMI Calculator </a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6" style="margin-bottom: 20px;padding-left:50px">
+                    <div class="footer_panel padding_bottom_half bottom20">
+                        <h3 class="whitecolor l21">Important Links</h3>
+                        <ul class="links">
+                            <li>  <a href="/home/Support" class="l22">  Contact Us</a></li>
+                            <li>  <a href="/Home/SignUp" class="l22">  Sign Up</a></li>
+                            <li>  <a href="#" class="l22">Privacy Policies</a></li>
+                            <li>  <a href="#" class="l22"> Terms and Conditions</a></li>
+                        </ul>
+                        <p class="whitecolor bottom25 l23">
+                            Made with <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+                            </svg> of millions of Indian
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer id="site-footer" class="showmobile bgdark padding_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 20px;padding-top:40px">
+                    <div class="footer_panel padding_bottom_half bottom20">
+                        <a href="/Home/Index" class="footer_logo bottom25">
+                            <img src="~/Assets/images/layout/rdq-finserv-white-logo.png" alt="rdq-finserv-white-logo" style="width: 250px;" />
+                        </a>
+                        <div class="d-table w-100 address-item whitecolor bottom25 l24">
+                            <span class="d-table-cell align-middle" style="color: #ffffff;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                </svg>
+                            </span>
+                            <p class="d-table-cell align-middle bottom0" style="text-align:left">
+                                <a class="d-block" href="tel:">  033 6826 0900 </a>
+                                <a class="d-block" href="mailto:">support@rdqfinserv.com</a>
+                            </p>
+                        </div>
+                        <ul class="social-icons wow fadeInUp" data-wow-delay="300ms">
+                            <li><a href="https://www.facebook.com/RDQ-Finserv-110096081435207/" class="facebook l25" target="_blank"><i class="fa fa-facebook-f"></i> </a> </li>
+                            <li><a href="https://twitter.com/rdqfinserv" class="twitter l25" target="_blank"><i class="fa fa-twitter"></i> </a> </li>
+                            <li> <a href="https://www.linkedin.com/company/rdqfinserv/" class="linkedin l25" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
+                            <li><a href="https://www.instagram.com/rdqfinserv/" class="insta" target="_blank" style="font-size:20px;color:#fff; border:none"><i class="fa fa-instagram"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="width:100%;padding-top:20px">
+                <div class="col-md-6" style="width: 40%">
+                    <h3 class="whitecolor" style=" margin-bottom: 10px; font-size: 1.5rem; font-weight: 500; color: #ffffff; text-align: left; line-height: 1.2;">
+                        Company
+                    </h3>
+                    <ul class="links">
+                        <li>  <a href="/Home/Aboutus" class="l26">  About Us</a></li>
+                        <li>  <a href="https://www.iimjobs.com/r/152295-RDQ-GROUP" target="_blank" class="l26">  Careers</a></li>
+                        <li>  <a href="#" class="l26">  Media</a></li>
+                        <li>  <a href="#" class="l26">  Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6" style="width:60%">
+                    <h3 class="whitecolor l27">
+                        Products & More
+                    </h3>
+                    <ul class="links text-white">
+                        <li><a href="/Home/personalloan" class="l26">  Personal Loan </a> </li>
+                        <li><a href="/Home/las" class="l26">  LAS </a></li>
+                        <li><a href="/Home/creditcard" class="l26">  Credit Card </a> </li>
+                        <li><a href="/Home/emiprotection" class="l26">  EMI Protection </a> </li>
+                        <li> <a href="/Home/consumerdurable" class="l26"> Consumer Durables </a></li>
+                        <li><a href="/Home/#loan_calculator" class="l26">  EMI Calculator </a> </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6" style="padding-top:40px">
+                    <h3 class="whitecolor l28">Important Links</h3>
+
+                    <ul class="links">
+                        <li>  <a href="/home/Support" class="l26">  Contact Us</a></li>
+                        <li>  <a href="/Home/SignUp" class="l26">  Sign Up</a></li>
+                        <li>  <a href="" class="l26">Privacy Policies</a></li>
+                        <li>  <a href="" class="l26"> Terms and Conditions</a></li>
+                    </ul>
+                    <p class="whitecolor bottom25 l23">
+                        Made with <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+                        </svg> of millions of Indian
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer ends-->
+    <!--copyright-->
+    <div class="copyright" style="background-color: #052d4b; color: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center wow fadeIn animated" data-wow-delay="300ms">
+                    <p class="m-0 py-3">Copyright © <span id="year1"></span> <a href="javascript:void(0)" class="hover-default">RDQ Technologies Pvt Ltd</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/Assets/js/common/animation.js"></script>
+    <script src="~/Assets/js/common/jquery.min.js"></script>
+    <script src="~/Assets/js/common/bootstrap.bundle.min.js"></script>
+    <script src="~/Assets/js/common/custom.js"></script>
+    <script src="~/Assets/js/common/imagesloaded.js"></script>
+    <script src="~/Assets/js/common/owl-carousel.js"></script>
+    <script src="~/Assets/js/common/p5.min.js"></script>
+    <script src="~/Assets/js/common/signUp.js"></script>
+    <script src="~/Assets/js/common/three.min.js"></script>
+    <script src="~/Assets/js/common/vanta.waves.min.js"></script>
+    <script src="~/Assets/js/common/theme.js"></script>
+    <script src="~/Assets/js/signUp.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+    <script>
+
+
+        VANTA.WAVES({
+            el: "#sp",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x57
+        })
+
+        VANTA.WAVES({
+            el: "#spmob",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x57
+        })
+    </script>
+</body>
+</html>
